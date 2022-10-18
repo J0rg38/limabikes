@@ -258,7 +258,7 @@
                                                 <div class="modal-body">
                                                     
                                                     <input type="file" name="excelclientes" id="excelclientes" class="form-control">
-                                                    <p style="margin-top: 10px;">Descargar archivo de plantilla <a href="">Aquí 👈🏼</a></p>
+                                                    <p style="margin-top: 10px;">Descargar archivo de plantilla <a href="Template_Clientes.xlsx" download="Template_Clientes.xlsx">Aquí 👈🏼</a></p>
 
                                                 </div>
                                                 <div class="modal-footer">

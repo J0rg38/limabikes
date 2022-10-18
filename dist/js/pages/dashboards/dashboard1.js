@@ -3,15 +3,27 @@ $(function () {
     // ==============================================================
     // Campaign
     // ==============================================================
+    var p2muysatisfecho = $('#p2muysatisfecho').val();
+    var p2satisfecho = $('#p2satisfecho').val();
+    var p2indiferente = $('#p2indiferente').val();
+    var p2insatisfecho = $('#p2insatisfecho').val();
+    var p2nadasatisfecho = $('#p2nadasatisfecho').val();
 
+    var p3muysatisfecho = $('#p3muysatisfecho').val();
+    var p3satisfecho = $('#p3satisfecho').val();
+    var p3indiferente = $('#p3indiferente').val();
+    var p3insatisfecho = $('#p3insatisfecho').val();
+    var p3nadasatisfecho = $('#p3nadasatisfecho').val();
+    
     var chart1 = c3.generate({
         bindto: '#campaign-v2',
         data: {
             columns: [
-                ['Direct Sales', 25],
-                ['Referral Sales', 15],
-                ['Afilliate Sales', 10],
-                ['Indirect Sales', 15]
+                ['Muy Satisfecho', p2muysatisfecho],
+                ['Satisfecho', p2satisfecho],
+                ['Indiferente', p2indiferente],
+                ['Insatisfecho', p2insatisfecho],
+                ['Nada Satisfecho', p2nadasatisfecho]
             ],
 
             type: 'donut',
@@ -23,7 +35,7 @@ $(function () {
             label: {
                 show: false
             },
-            title: 'Sales',
+            title: 'S1',
             width: 18
         },
 
@@ -32,10 +44,49 @@ $(function () {
         },
         color: {
             pattern: [
-                '#edf2f6',
-                '#5f76e8',
-                '#ff4f70',
-                '#01caf1'
+                '#16C00E',
+                '#92C00E',
+                '#EDD611',
+                '#D66E06',
+                '#D60F06'
+            ]
+        }
+    });
+
+    var chart2 = c3.generate({
+        bindto: '#campaign-v3',
+        data: {
+            columns: [
+                ['Muy Satisfecho', p3muysatisfecho],
+                ['Satisfecho', p3satisfecho],
+                ['Indiferente', p3indiferente],
+                ['Insatisfecho', p3insatisfecho],
+                ['Nada Satisfecho', p3nadasatisfecho]
+            ],
+
+            type: 'donut',
+            tooltip: {
+                show: true
+            }
+        },
+        donut: {
+            label: {
+                show: false
+            },
+            title: 'S1',
+            width: 18
+        },
+
+        legend: {
+            hide: true
+        },
+        color: {
+            pattern: [
+                '#16C00E',
+                '#92C00E',
+                '#EDD611',
+                '#D66E06',
+                '#D60F06'
             ]
         }
     });

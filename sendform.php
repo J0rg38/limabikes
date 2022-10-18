@@ -92,7 +92,7 @@
             <div class="container-fluid">
                 <?php 
                 	if(mysqli_query($conexion,$sql)){
-						echo "ok";
+						//echo "ok";
 				?>
 					<div class="row">
 						<div class="col-12" style="text-align: center;">
@@ -102,7 +102,7 @@
 					</div>
 				<?php
 					}else{
-						echo "err";
+						//echo "err";
 				?>
 					<div class="row">
 						<div class="col-12" style="text-align: center;">
